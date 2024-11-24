@@ -4,5 +4,6 @@ members = [
     "cli",
     "jito_protos",
     "searcher_client",
+    "pumpmev"
 ]
 resolver = "2"
