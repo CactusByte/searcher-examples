@@ -1,3 +1,7 @@
 [submodule "jito_protos/protos"]
 	path = jito_protos/protos
 	url = https://github.com/jito-labs/mev-protos.git
+
+[submodule "pumpmev"]
+	path = pumpmev
+	url = https://github.com/CactusByte/searcher-examples.git
