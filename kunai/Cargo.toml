@@ -1,0 +1,38 @@
+[package]
+name = "kunai"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# Jito
+jito-protos = { path = "../jito_protos" }
+jito-searcher-client = { path = "../searcher_client" }
+
+# Solana
+solana-sdk = "1.17.0"
+solana-client = "1.17.0"
+solana-transaction-status = "1.17.0"
+solana-account-decoder = "1.17.0"
+spl-associated-token-account = { version = "2.2.0", features = [
+  "no-entrypoint",
+] }
+spl-token-2022 = { version = "0.9.0", features = ["no-entrypoint"] }
+spl-token = { version = "4.0.0", features = ["no-entrypoint"] }
+
+# Utils
+serde = "1.0.215"
+futures-util = "0.3.31"
+tokio = {version= "1.41.1", features = ["full"] }
+chrono = "0.4.38"
+tonic = { version = "0.10", features = [
+  "tls",
+  "tls-roots",
+  "tls-webpki-roots",
+]}
+reqwest = { version = "0.12.4", features = ["json", "stream"] }
+borsh = "0.10.3"
+tokio-tungstenite = { version = "*", features = ["native-tls"]}
+url = "2.5.4"
+colored = "2.1.0"

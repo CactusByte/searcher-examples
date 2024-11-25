@@ -2,7 +2,7 @@
 members = [
     "backrun",
     "cli",
-    "jito_protos",
+    "jito_protos", "kunai",
     "searcher_client",
 ]
 resolver = "2"
